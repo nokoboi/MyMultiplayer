@@ -20,9 +20,8 @@ public class CharacterSelectUI : MonoBehaviour
     [SerializeField] private Button noColorButton;
     [SerializeField] private Button whiteButton;
     [SerializeField] private Button blueButton;
-    [SerializeField] private Button redButton; 
     [SerializeField] private Button greenButton;
-    [SerializeField] private Button purpleButton;
+
 
     private void Awake()
     {
@@ -80,21 +79,10 @@ public class CharacterSelectUI : MonoBehaviour
             MultiplayerManager.Instance.SetPlayerColor(new Color(0, 0, 1, 1));
         });
 
-        redButton.onClick.AddListener(() =>
-        {
-            MultiplayerManager.Instance.SetPlayerColor(new Color(1, 0, 0, 1));
-        });
-
         greenButton.onClick.AddListener(() =>
         {
             MultiplayerManager.Instance.SetPlayerColor(new Color(0, 1, 0, 1));
         });
-
-        purpleButton.onClick.AddListener(() =>
-        {
-            MultiplayerManager.Instance.SetPlayerColor(new Color(1, 0, 1, 1));
-        });
-
 
     }
 

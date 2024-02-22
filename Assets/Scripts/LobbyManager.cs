@@ -13,7 +13,7 @@ using Unity.Services.Authentication;
 
 public class LobbyManager : MonoBehaviour
 {
-    public const int MAX_PLAYERS = 2;
+    public const int MAX_PLAYERS = 4;
 
     public static LobbyManager Instance { get; private set; }
 

@@ -178,38 +178,4 @@ public class PlayerController : NetworkBehaviour
 
         Destroy(bullet, 2f);
     }
-        
-
-        
-
-    /* Válido para modo Sigle
-     * 
-        public void SelectSkin(int skinIndex)
-        {
-            if (!IsOwner)
-            {
-                return;
-            }
-            // Asignamos los elementos a la nueva skin
-            this.skinIndex = skinIndex;
-            GameObject newSkin = skinList[skinIndex];            
-            newSkin.transform.rotation = localSkin.transform.rotation;
-            weapon.transform.SetParent(newSkin.transform);
-            
-        
-            //Desactivamos la anterior
-            localSkin.SetActive(false);
-            //Activamos el nuevo
-            newSkin.SetActive(true);
-            
-            // Reasignamos nombres.
-            localSkin = newSkin;
-        
-            // Actualizamos la animación
-            anim = GetComponentInChildren<Animator>();
-        }
-    */
-    
-
-
 }

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class MainMenuUI : MonoBehaviour
 {
     // Declaración de variables
-    [SerializeField] private Button newGameButton;
     [SerializeField] private Button MultiplayerGameButton;
     [SerializeField] private Button ExitGameButton;
     [SerializeField] private GameObject multiplayerMenuUI;
@@ -18,7 +17,6 @@ public class MainMenuUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        newGameButton.onClick.AddListener(() => NewGame());
         MultiplayerGameButton.onClick.AddListener(() => NewMultiplayerGame());
         ExitGameButton.onClick.AddListener(Application.Quit);
 
@@ -26,13 +24,7 @@ public class MainMenuUI : MonoBehaviour
 
     #region Métodos de Botón
     
-    // Método para Iniciar nueva partida
-    public void NewGame()
-    {
-        SceneManager.LoadScene("GameScene");
-    }
-
-
+ 
     // Método para Iniciar nueva partida multijugador
     public void NewMultiplayerGame()
     {

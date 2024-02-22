@@ -793,11 +793,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: b71d0fcb-c3f8-4550-8d70-a6c000caf37b
+  cloudProjectId: ef1e62cb-6d4f-4c6e-9f9c-c67fc2f7cce5
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Multiplayer2D_Template
-  organizationId: acruxs
+  organizationId: kevin-s-nchez-cantero
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
