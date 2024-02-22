@@ -135,11 +135,11 @@ public class PlayerController : NetworkBehaviour
         
 
         // Rotamos el jugador en función de la pulsación de teclas.
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             this.transform.rotation = Quaternion.identity;
         }
-        else if(Input.GetKeyDown(KeyCode.LeftArrow))
+        else if(Input.GetKeyDown(KeyCode.A))
         {
             this.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
         }
